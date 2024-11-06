@@ -1,15 +1,19 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
-    return ( 
-        <nav className="navbar">
-            <h1>Derecho Santugon</h1>
-            <div className="links">
-                <a href="/">Home</a>
-                <a href="/eb">Executive Board</a>
-                <a href="/colleges">Colleges</a>
-                <a href="/la">LA Agenda</a>
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="navbar">
+      <Link to="/">
+        <img src="/SantuLogo.png" alt="Santu Logo" className="santulogo" />
+      </Link>
+      <div className="links">
+        <Link to="/home">Home</Link>
+        <Link to="/eb">Executive Board</Link>
+        <Link to="/colleges">Colleges</Link>
+        <Link to="/la">LA Agenda</Link>
+      </div>
+    </nav>
+  );
 }
- 
+
 export default Navbar;
