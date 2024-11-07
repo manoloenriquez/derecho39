@@ -18,7 +18,7 @@ body, html {
   padding: 20px;
   display: flex;
   align-items: center;
-  width: 100%;
+  /*width: 100%;*/
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
   background-color: #abd2fa;
@@ -44,11 +44,11 @@ body, html {
   border-radius: 10px;
   border: 1px solid #ffc300;
 }
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
+/*.content {*/
+/*  !*max-width: 600px;*!*/
+/*  !*margin: 40px auto;*!*/
+/*  !*padding: 20px;*!*/
+/*}*/
 
 .navbar .santulogo {
   width: 30px;
@@ -91,9 +91,8 @@ body, html {
 }
 
 .base {
-  display: flex;  /* Use Flexbox */
-  justify-content: space-between;  /* Ensure there's space between the two divs */
   align-items: stretch;  /* Stretch divs to full height */
+  flex-basis: 100%;
   width: 100%;  /* Ensure the container takes up the full width of the page */
   height: 100vh;  /* Ensure the container takes up the full height of the viewport */
   background-color: #fffcf0;
@@ -102,16 +101,22 @@ body, html {
 .eb {
   display: flex;  /* Flexbox on the child container */
   width: 100%;  /* Ensure it spans the whole width */
+  border-bottom: #010085;
+  border-bottom: 10px solid #007eff;
 }
 
 .vision {
-  flex: 0 0 40%;  /* This will make the vision div 40% of the container width */
-  padding: 20px;
+  width: 40%;
 }
 
-.ebimg {
-  flex: 0 0 60%;  /* This will make the ebimg div 60% of the container width */
-  padding: 20px;
+.eb-column {
+  width: 60%;
+}
+
+.eb-column img {
+    width: 100%;  /* Image will fill the ebimg div */
+    height: auto;
+    display: block;  /* Prevent image from overflowing */
 }
 
 .block1 {
