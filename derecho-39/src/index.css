@@ -107,6 +107,10 @@ body, html {
 
 .vision {
   width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .eb-column {
@@ -120,11 +124,27 @@ body, html {
 }
 
 .block1 {
-  width: 100%;  /* Image will fill the vision div */
+  /* width: 25%; */
   height: auto;
 }
 
 .baseEb {
   width: 100%;  /* Image will fill the ebimg div */
   height: auto;
+}
+
+.vis1 {
+  font-style: bold;
+  color: #010085;
+  font-size: 40px;
+  word-spacing: px;
+}
+
+.vis2 {
+  color: #50a5fd;
+  font-size: 55px;
+}
+
+.visionWords h1 {
+  margin-block-start: -0.3em;
 }
