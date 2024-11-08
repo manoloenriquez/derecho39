@@ -4,6 +4,7 @@ import Home from './Home';
 import Footer from './Footer';
 import Eb from './Eb';
 import Base from './Base';
+import Colleges from './Colleges';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Base />} />
             <Route path="/home" element={<Home />} />
             <Route path="/eb" element={<Eb />} />
+            <Route path="/collges" element={<Colleges />} />
           </Routes>
         </div>
         <Footer />

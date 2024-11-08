@@ -98,11 +98,11 @@ body, html {
   background-color: #fffcf0;
 }
 
-.eb {
+.baseFlex {
   display: flex;  /* Flexbox on the child container */
   width: 100%;  /* Ensure it spans the whole width */
   border-bottom: #010085;
-  border-bottom: 10px solid #007eff;
+  border-bottom: 50px solid #007eff;
 }
 
 .vision {
@@ -148,3 +148,42 @@ body, html {
 .visionWords h1 {
   margin-block-start: -0.3em;
 }
+
+.baseSpeech {
+  font-size: 13px;
+  color: #010085;
+  margin-bottom: 7px;
+}
+
+.baseSpeechContainer {
+  padding: 20px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  max-width: 80vw; /* Restrict width of .home container */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.collegesFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.threeC, .twoC {
+  display: flex;
+  justify-content: center; /* Center images within each row */
+  width: 100%;
+  gap: 5px; /* Reduce the gap to make images closer */
+}
+
+.threeC img, .twoC img {
+  max-width: 350px; /* Set a fixed size for images */
+  width: 100%;
+  height: auto;
+}
+
+
