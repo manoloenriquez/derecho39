@@ -4,7 +4,7 @@ import Footer from './Footer'; // Import Footer component
 
 const legislators = [
   { name: "Pharell TACSUAN", role: "EXCEL2027 Batch Legislator", course: "ECM-LGL", school: "DLSU Integrated School" },
-  { name: "Ivan MANGUBAT", role: "CATCH2T27 Batch Legislator", course: "BS CS-ST", school: "Assumption College San Lorenzo" },
+  { name: "Ivan MANGUBAT", role: "CATCH2T27 Batch Legislator", course: "BS CS-ST", school: " Colegio San Agustin - Biñan" },
   { name: "Jules VALENCIANO", role: "CATCH2T28 Batch Legislator", course: "BS CS-ST", school: "Angeles City Science High School" },
   { name: "Ystiphen DELA CRUZ", role: "79th ENG Batch Legislator", course: "BS BME", school: "DLSU Integrated School" },
   { name: "Zach QUIAMBAO", role: "FAST2023 Batch Legislator", course: "AB POM", school: "Angeles City Science High School" },

@@ -9,6 +9,7 @@
 .main-container {
   display: flex;
   flex: 1;
+  padding-bottom: 60px;
 }
 
 /* Footer specific to LA page */
@@ -48,8 +49,8 @@
   
   .legislators-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 30px;
   }
   
   .legislator-card {
@@ -65,6 +66,7 @@
   
   .legislator-info-box {
     position: below;
+    bottom: 0;
     width: 100%;
     background-color: #03045e; /* Dark blue background */
     color: white;

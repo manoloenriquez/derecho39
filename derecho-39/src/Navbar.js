@@ -10,10 +10,16 @@ const Navbar = () => {
         <Link to="/home">Home</Link>
         <Link to="/eb">Executive Board</Link>
         <Link to="/colleges">Colleges</Link>
-        <Link to="/la">LA Agenda</Link>
+        <div className="la-item">
+          <Link to="/la">LA Agenda</Link>
+          <div className="la-dropdown service-dropdown">
+            <Link to="/la">Your Batch Legislators</Link>
+            <Link to="/agenda">Our LA Agenda</Link>
+          </div>
+        </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

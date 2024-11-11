@@ -5,6 +5,8 @@ import Footer from './Footer';
 import Eb from './Eb';
 import Base from './Base';
 import Colleges from './Colleges';
+import LA from './LA';
+import Agenda from './agenda';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
             <Route path="/" element={<Base />} />
             <Route path="/home" element={<Home />} />
             <Route path="/eb" element={<Eb />} />
-            <Route path="/collges" element={<Colleges />} />
+            <Route path="/colleges" element={<Colleges />} />
+            <Route path="/la" element={<LA />} />
+            <Route path="/agenda" element={<Agenda />} />
           </Routes>
         </div>
         <Footer />

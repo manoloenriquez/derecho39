@@ -1,75 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
 }
 
-/* base styles */
+.base {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
 * {
   margin: 0;
   font-family: "Quicksand";
   color: #333;
 }
+
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  /*width: 100%;*/
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
   background-color: #abd2fa;
 }
-.navbar h1 {
-  color: #010085;
-}
-.navbar .links {
-  margin-left: auto;
-  margin-right: 35px;
-}
-.navbar a {
-  margin-left: 10px;
-  text-decoration: none;
-  padding: 6px;
-  color: #010085;
-  font-weight: bold;
-  font-size: 20px;
-}
-.navbar a:hover {
-  background-color: #ffc300;
-  color:#f2f2f2;
-  border-radius: 10px;
-  border: 1px solid #ffc300;
-}
-/*.content {*/
-/*  !*max-width: 600px;*!*/
-/*  !*margin: 40px auto;*!*/
-/*  !*padding: 20px;*!*/
-/*}*/
 
 .navbar .santulogo {
   width: 30px;
   height: 30px;
 }
 
+.navbar .links {
+  margin-left: auto;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar a {
+
+  text-decoration: none;
+  padding: 6px 10px;  color: #010085;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #ffc300;
+  color: #f2f2f2;
+  border-radius: 10px;
+  border: 1px solid #ffc300;
+}
+
+.la-item {
+  position: relative;
+}
+
+.la-dropdown {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.la-item:hover .service-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.la-dropdown a {
+  display: block;
+  padding: 10px;
+  color: #010085;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.la-dropdown a:hover {
+  border-radius: 10px;
+}
+
 .footer {
   padding: 20px;
   display: flex;
-  justify-content: center; /* Adjust to space the items out */
-  align-items: center;           /* Center items vertically */
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 2%;
   margin: 0 auto;
   border-top: 1px solid #f2f2f2;
   background-color: #38b6ff;
-  
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1000;
+  flex-shrink: 0;
 }
 
 .footer .socials {
@@ -91,16 +132,16 @@ body, html {
 }
 
 .base {
-  align-items: stretch;  /* Stretch divs to full height */
+  align-items: stretch;
   flex-basis: 100%;
-  width: 100%;  /* Ensure the container takes up the full width of the page */
-  height: 100vh;  /* Ensure the container takes up the full height of the viewport */
+  width: 100%;
+  height: 100vh;
   background-color: #fffcf0;
 }
 
 .baseFlex {
-  display: flex;  /* Flexbox on the child container */
-  width: 100%;  /* Ensure it spans the whole width */
+  display: flex;
+  width: 100%;
   border-bottom: #010085;
   border-bottom: 50px solid #007eff;
 }
@@ -118,18 +159,17 @@ body, html {
 }
 
 .eb-column img {
-    width: 100%;  /* Image will fill the ebimg div */
-    height: auto;
-    display: block;  /* Prevent image from overflowing */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .block1 {
-  /* width: 25%; */
   height: auto;
 }
 
 .baseEb {
-  width: 100%;  /* Image will fill the ebimg div */
+  width: 100%;
   height: auto;
 }
 
@@ -137,7 +177,6 @@ body, html {
   font-style: bold;
   color: #010085;
   font-size: 40px;
-  word-spacing: px;
 }
 
 .vis2 {
@@ -162,7 +201,7 @@ body, html {
 .home {
   display: flex;
   justify-content: center;
-  max-width: 80vw; /* Restrict width of .home container */
+  max-width: 80vw;
   margin: 0 auto;
   padding: 20px;
 }
@@ -175,15 +214,13 @@ body, html {
 
 .threeC, .twoC {
   display: flex;
-  justify-content: center; /* Center images within each row */
+  justify-content: center;
   width: 100%;
-  gap: 5px; /* Reduce the gap to make images closer */
+  gap: 5px;
 }
 
 .threeC img, .twoC img {
-  max-width: 350px; /* Set a fixed size for images */
+  max-width: 350px;
   width: 100%;
   height: auto;
 }
-
-
