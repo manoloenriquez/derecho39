@@ -1,0 +1,136 @@
+/* Ensure the la-page container takes up the full height */
+.la-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content container that expands */
+.main-container {
+  display: flex;
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+/* Footer specific to LA page */
+.la-footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #38b6ff;
+  color: #010085;
+  font-weight: bold;
+  font-size: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.la-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #010085;
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+  
+  .la-container {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .legislators-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .legislator-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .legislator-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .legislator-info-box {
+    position: below;
+    bottom: 0;
+    width: 100%;
+    background-color: #03045e; /* Dark blue background */
+    color: white;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .legislator-info-box h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+  }
+  
+  .legislator-info-box h2 span {
+    color: #ffdd00; /* Gold color for last name */
+  }
+  
+  .legislator-info-box .role,
+  .legislator-info-box .course,
+  .legislator-info-box .school {
+    font-size: 0.8rem;
+    color: white;
+    margin: 2px 0;
+  }
+  
+  .role {
+    font-weight: bold;
+  }
+  
+  .school {
+    font-weight: normal;
+  }
+
+  .main-container {
+    display: flex;
+}
+
+.left-section {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.left-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.credits {
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    margin-top: auto;
+    text-align: center;
+}
+
+.la-container {
+    width: 70%;
+    padding: 20px;
+}
