@@ -1,0 +1,40 @@
+/* home.css */
+.home {
+    display: flex;
+    justify-content: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Minimal gap between rows */
+    width: 100%;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    max-width: 500px; /* Increased max width to make images larger */
+    flex: 1;
+  }
+  
+  .group-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image fills the wrapper without extra space */
+    margin: 0; /* Ensures no margin around the image */
+    padding: 0; /* Ensures no padding around the image */
+  }
+  

@@ -198,14 +198,6 @@ body, html {
   padding: 20px;
 }
 
-.home {
-  display: flex;
-  justify-content: center;
-  max-width: 80vw;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .collegesFlex {
   display: flex;
   flex-direction: column;
