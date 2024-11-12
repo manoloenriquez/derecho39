@@ -12,7 +12,7 @@ const Eb = () => {
       </div>
 
       {/* Content Section */}
-      <div className="content">
+      <div className="content-text">
         <h2 className="section-title">REALIZED LASALLIAN PURPOSE</h2>
         <p className="description">
           As our USG reaches its 15th year, we celebrate the personal and shared experiences guiding us toward our dreams and goals as Lasallians. 
