@@ -6,7 +6,7 @@ const images = [
   { src: '/ccs-slate.png', alt: 'CCS', link: '/ccs' },
   { src: '/cla-slate.png', alt: 'CLA', link: '/cla' },
   { src: '/cos-slate.png', alt: 'COS', link: '/cos' },
-  { src: '/cob-slate.png', alt: 'RVR-COB', link: '/rvr-cob' },
+  { src: '/cob-slate.png', alt: 'RVR-COB', link: '/cob' },
   { src: '/soe-slate.png', alt: 'SOE', link: '/soe' },
 ];
 
