@@ -21,16 +21,16 @@ const Base = () => {
                 <div className="vision">
                     <div className="baseSpeechContainer">
                         <p className="baseSpeech">
-                            As our university reaches its 50th year, we celebrate the personal and shared experiences guiding us toward our dreams and goals as Lasallians. 
+                            As our university reaches its 50th year, we celebrate the personal and shared experiences guiding us toward <strong>our dreams and goals </strong>as Lasallians. 
                             In our journey of discovering these, we value our individual pursuits and embrace the strengths found within our different paces.
                         </p>
                         <p className="baseSpeech">
-                            The University Student Government is dedicated to empowering you in your everyday student life through opportunities focused on purposeful student response, transformative university life, and collaborative community development, 
+                            The University Student Government is dedicated to <strong>empowering you in your everyday student life</strong> through opportunities focused on <strong> purposeful student response, transformative university life</strong>, and <strong>collaborative community development</strong>, 
                             helping you academically and socially thrive. By respecting each individual’s unique journey, we foster an environment where you can achieve your fullest potential.
                         </p>
                         <p className="baseSpeech">
-                            A Realized Lasallian Purpose means finding your place in the university and your role in the community. 
-                            This is a university life that you can call yours.
+                            <strong>A Realized Lasallian Purpose</strong> means finding your place in the university and your role in the community. 
+                            <strong>This is a university life that you can call yours</strong>.
                         </p>
                     </div>
                 </div>
