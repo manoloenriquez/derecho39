@@ -21,8 +21,6 @@
   }
   
   .image-wrapper {
-    background-color: #fff;
-    border-radius: 8px;
     overflow: hidden;
     
     max-width: 500px; /* Increased max width to make images larger */
