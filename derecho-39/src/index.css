@@ -158,6 +158,18 @@ body, html {
   width: 60%;
 }
 
+.eb-column-bottom {
+  width: 60%;
+  height: auto;
+  background: linear-gradient(to bottom, #ffffff, #abd2fa);
+}
+
+.baseEb-bottom {
+  width: 100%;
+  height: 100%;
+}
+
+
 .eb-column img {
   width: 100%;
   height: auto;
@@ -189,14 +201,21 @@ body, html {
 }
 
 .baseSpeech {
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem); /* Dynamic font size based on viewport */
+  line-height: 1.2; /* Keeps text spacing consistent */
   color: #010085;
-  margin-bottom: 7px;
+  margin-bottom: 0.5rem;
+  word-wrap: break-word; /* Prevents long words from causing overflow */
 }
 
 .baseSpeechContainer {
-  padding: 20px;
+  padding: 2vw;
+  max-width: 90vw;
+  max-height: 65vh; /* Limits height to prevent overflow */
+  overflow-y: auto; /* Adds scrolling if text exceeds container */
 }
+
+
 
 .collegesFlex {
   display: flex;

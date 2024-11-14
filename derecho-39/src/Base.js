@@ -15,13 +15,13 @@ const Base = () => {
                 </div>
             </div>
             <div className="baseFlex">
-                <div className="eb-column">
-                    <img src="/base-eb.png" alt="EB base pic" className="baseEb" />
+                <div className="eb-column-bottom">
+                    <img src="/eb-loa.png" alt="EB base Loa pic" className="baseEb-bottom" />
                 </div>
                 <div className="vision">
                     <div className="baseSpeechContainer">
                         <p className="baseSpeech">
-                            As our university reaches its 50th year, we celebrate the personal and shared experiences guiding us toward <strong>our dreams and goals </strong>as Lasallians. 
+                            As our university reaches its Golden Jubilee year, we celebrate the personal and shared experiences guiding us toward <strong>our dreams and goals </strong>as Lasallians. 
                             In our journey of discovering these, we value our individual pursuits and embrace the strengths found within our different paces.
                         </p>
                         <p className="baseSpeech">
