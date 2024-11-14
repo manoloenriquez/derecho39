@@ -31,8 +31,7 @@ body, html {
   background-color: #abd2fa;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  overflow-x: auto; /* Only allow horizontal scrolling */
-  overflow-y: hidden; /* Prevent vertical scrolling */
+  overflow: visible; /* Allow the dropdown to be visible */
 }
 
 .navbar .santulogo {
@@ -83,7 +82,7 @@ body, html {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.la-item:hover .service-dropdown {
+.la-item:hover .la-dropdown {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
@@ -243,7 +242,7 @@ body, html {
     padding: 10px;
     flex-direction: row; /* Keep items in a row */
     overflow-x: auto; /* Allow scrolling */
-    overflow-y: hidden; /* Disable vertical scroll */
+    overflow-y: visible; 
   }
 
   .navbar .links {
