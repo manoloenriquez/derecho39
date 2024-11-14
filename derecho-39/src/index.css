@@ -238,7 +238,6 @@ body, html {
   height: auto;
 }
 
-/* Mobile responsive: Allow horizontal scroll in the navbar */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px;
@@ -293,17 +292,21 @@ body, html {
 
   /* Footer responsive changes */
   .footer {
-    flex-direction: column; /* Stack the content */
+    flex-direction: row; /* Keep items in a row for mobile */
+    justify-content: center; /* Center the items horizontally */
     padding: 20px;
     height: auto; /* Allow footer to expand as needed */
+    align-items: center; /* Vertically align items */
   }
 
   .footer .socials {
-    margin-top: 10px;
+    margin-left: 10px; /* Adjust spacing between social icons and text */
   }
 
   .footer .nameS {
-    font-size: 18px; /* Adjust font size */
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .footer .fblogo {
