@@ -23,39 +23,41 @@ body, html {
 }
 
 .navbar {
-  padding: 20px 10%;
+  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
   background-color: #abd2fa;
 }
 
 .navbar .santulogo {
-  width: 40px;
-  height: auto;
+  width: 30px;
+  height: 30px;
 }
 
 .navbar .links {
+  margin-left: auto;
+  margin-right: 35px;
   display: flex;
   align-items: center;
-  gap: 20px;
   position: relative;
+  gap: 15px; /* Adjusted spacing for desktop */
 }
 
 .navbar a {
   text-decoration: none;
+  padding: 6px 10px;
   color: #010085;
   font-weight: bold;
-  font-size: 18px;
-  padding: 8px 15px;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 20px;
 }
 
 .navbar a:hover {
   background-color: #ffc300;
   color: #f2f2f2;
   border-radius: 10px;
+  border: 1px solid #ffc300;
 }
 
 .la-item {
@@ -67,17 +69,17 @@ body, html {
   pointer-events: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  min-width: 200px;
+  right: 0;
+  width: 300px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border-radius: 10px;
+  z-index: 1000;
   transform: translateY(-10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-  z-index: 1000;
 }
 
-.la-item:hover .la-dropdown {
+.la-item:hover .service-dropdown {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
@@ -85,16 +87,14 @@ body, html {
 
 .la-dropdown a {
   display: block;
-  padding: 10px 15px;
+  padding: 10px;
   color: #010085;
   font-weight: bold;
   text-decoration: none;
 }
 
 .la-dropdown a:hover {
-  background-color: #ffc300;
-  color: #f2f2f2;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .footer {
@@ -104,6 +104,7 @@ body, html {
   align-items: center;
   width: 100%;
   height: 2%;
+  margin: 0 auto;
   border-top: 1px solid #f2f2f2;
   background-color: #38b6ff;
   position: fixed;
@@ -200,18 +201,18 @@ body, html {
 }
 
 .baseSpeech {
-  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
-  line-height: 1.2;
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem); /* Dynamic font size based on viewport */
+  line-height: 1.2; /* Keeps text spacing consistent */
   color: #010085;
   margin-bottom: 0.5rem;
-  word-wrap: break-word;
+  word-wrap: break-word; /* Prevents long words from causing overflow */
 }
 
 .baseSpeechContainer {
   padding: 2vw;
   max-width: 90vw;
-  max-height: 65vh;
-  overflow-y: auto;
+  max-height: 65vh; /* Limits height to prevent overflow */
+  overflow-y: auto; /* Adds scrolling if text exceeds container */
 }
 
 .collegesFlex {
@@ -233,7 +234,23 @@ body, html {
   height: auto;
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
+/* Responsive adjustments for screens 768px and smaller */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .navbar .links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 18px; /* Smaller font for mobile */
+  }
+
   .base {
     flex-direction: column;
     padding: 1vw;
