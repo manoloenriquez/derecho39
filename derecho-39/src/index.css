@@ -23,40 +23,39 @@ body, html {
 }
 
 .navbar {
-  padding: 20px;
+  padding: 20px 10%;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
   border-bottom: 1px solid #f2f2f2;
   background-color: #abd2fa;
 }
 
 .navbar .santulogo {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: auto;
 }
 
 .navbar .links {
-  margin-left: auto;
-  margin-right: 35px;
   display: flex;
   align-items: center;
+  gap: 20px;
   position: relative;
 }
 
 .navbar a {
-
   text-decoration: none;
-  padding: 6px 10px;  color: #010085;
+  color: #010085;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
   background-color: #ffc300;
   color: #f2f2f2;
   border-radius: 10px;
-  border: 1px solid #ffc300;
 }
 
 .la-item {
@@ -68,17 +67,17 @@ body, html {
   pointer-events: none;
   position: absolute;
   top: 100%;
-  right: 0;
-  width: 300px;
+  left: 0;
+  min-width: 200px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  z-index: 1000;
+  border-radius: 8px;
   transform: translateY(-10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1000;
 }
 
-.la-item:hover .service-dropdown {
+.la-item:hover .la-dropdown {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
@@ -86,14 +85,16 @@ body, html {
 
 .la-dropdown a {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   color: #010085;
   font-weight: bold;
   text-decoration: none;
 }
 
 .la-dropdown a:hover {
-  border-radius: 10px;
+  background-color: #ffc300;
+  color: #f2f2f2;
+  border-radius: 8px;
 }
 
 .footer {
@@ -103,7 +104,6 @@ body, html {
   align-items: center;
   width: 100%;
   height: 2%;
-  margin: 0 auto;
   border-top: 1px solid #f2f2f2;
   background-color: #38b6ff;
   position: fixed;
@@ -169,7 +169,6 @@ body, html {
   height: 100%;
 }
 
-
 .eb-column img {
   width: 100%;
   height: auto;
@@ -201,21 +200,19 @@ body, html {
 }
 
 .baseSpeech {
-  font-size: clamp(1rem, 2vw + 1rem, 1.5rem); /* Dynamic font size based on viewport */
-  line-height: 1.2; /* Keeps text spacing consistent */
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+  line-height: 1.2;
   color: #010085;
   margin-bottom: 0.5rem;
-  word-wrap: break-word; /* Prevents long words from causing overflow */
+  word-wrap: break-word;
 }
 
 .baseSpeechContainer {
   padding: 2vw;
   max-width: 90vw;
-  max-height: 65vh; /* Limits height to prevent overflow */
-  overflow-y: auto; /* Adds scrolling if text exceeds container */
+  max-height: 65vh;
+  overflow-y: auto;
 }
-
-
 
 .collegesFlex {
   display: flex;
@@ -236,7 +233,6 @@ body, html {
   height: auto;
 }
 
-/* Portrait mode adjustments for screens 768px and smaller */
 @media (max-width: 768px) and (orientation: portrait) {
   .base {
     flex-direction: column;
@@ -244,32 +240,32 @@ body, html {
   }
 
   .baseFlex {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     padding: 1vw;
-    gap: 10px; /* Add spacing between stacked items */
+    gap: 10px;
   }
 
   .vision, .eb-column, .eb-column-bottom {
-    width: 100%; /* Allow elements to take full width on mobile */
-    text-align: center; /* Center text for better readability */
+    width: 100%;
+    text-align: center;
   }
 
   .visionWords h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem); /* Adjust font size for mobile */
+    font-size: clamp(1.5rem, 5vw, 3rem);
   }
 
   .baseEb, .baseEb-bottom, .eb-column img {
-    width: 90%; /* Reduce image width to fit smaller screens */
-    margin: 0 auto; /* Center images */
+    width: 90%;
+    margin: 0 auto;
   }
 
   .baseSpeechContainer {
     max-width: 100vw;
-    padding: 5vw; /* Increase padding for readability on small screens */
+    padding: 5vw;
   }
 
   .baseSpeech {
-    font-size: clamp(1rem, 4vw, 1.2rem); /* Scale font size for narrow screens */
+    font-size: clamp(1rem, 4vw, 1.2rem);
     line-height: 1.3;
   }
 }
