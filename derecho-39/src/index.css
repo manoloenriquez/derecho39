@@ -29,6 +29,9 @@ body, html {
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
   background-color: #abd2fa;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
 }
 
 .navbar .santulogo {
@@ -234,17 +237,17 @@ body, html {
   height: auto;
 }
 
-/* Responsive adjustments for screens 768px and smaller */
+/* Mobile responsive: Allow horizontal scroll in the navbar */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px;
-    flex-direction: column;
+    flex-direction: row; /* Keep items in a row */
+    overflow-x: auto; /* Allow scrolling */
   }
 
   .navbar .links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: row;
+    gap: 15px; /* Ensure enough space between items */
   }
 
   .navbar a {
