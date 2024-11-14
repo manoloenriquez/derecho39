@@ -53,11 +53,11 @@ html, body {
 }
 
 .section-title {
-  font-size: 4em;
+  font-size: clamp(2rem, 8vw, 4em); /* Responsive font size */
   font-weight: bold;
   color: #0e2391;
-
 }
+
 
 .description {
   font-size: 1.1em;
