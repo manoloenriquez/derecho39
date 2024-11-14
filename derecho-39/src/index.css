@@ -31,7 +31,8 @@ body, html {
   background-color: #abd2fa;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+  overflow-x: auto; /* Only allow horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
 .navbar .santulogo {
@@ -243,6 +244,7 @@ body, html {
     padding: 10px;
     flex-direction: row; /* Keep items in a row */
     overflow-x: auto; /* Allow scrolling */
+    overflow-y: hidden; /* Disable vertical scroll */
   }
 
   .navbar .links {
