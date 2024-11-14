@@ -300,13 +300,14 @@ body, html {
   }
 
   .footer .socials {
-    margin-left: 10px; /* Adjust spacing between social icons and text */
+    margin-left: 5px; /* Reduced margin to bring logo closer */
+    margin-right: 5px; /* Optional: reduce space after the logo */
   }
 
   .footer .nameS {
     font-size: 16px; /* Adjust font size for smaller screens */
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px; /* Reduced padding for closer alignment */
+    padding-right: 5px; /* Reduced padding for closer alignment */
   }
 
   .footer .fblogo {
