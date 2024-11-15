@@ -57,10 +57,10 @@ export default function Agenda() {
               </div>
             ))}
           </div>
-          <h1 className="title">Our LA Agenda</h1>
+          {/* <h1 className="title">Our LA Agenda</h1>
           <p className="intro-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          </p> */}
           
           {/* Thrust Section */}
           <h2 className="title">{displayedThrust.title}</h2>

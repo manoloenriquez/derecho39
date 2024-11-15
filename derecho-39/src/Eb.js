@@ -14,7 +14,7 @@ const Eb = () => {
     },
     {
       title: "Campaign for the Enhancement of the University’s Online Interfaces, Platforms, and System",
-      description: "The Campaign for the Enhancement of the University’s Online Interfaces, Platforms, and Systems aims to modernize digital resources for the Lasallian community."
+      description: "The Campaign for the Enhancement of the University’s Online Interfaces, Platforms, and Systems aims to modernize digital resources for the Lasallian community. By gathering user feedback through surveys, focus groups, and open forums, the campaign will identify and address the needs of students, faculty, and staff. Targeted improvements will be made to platforms like MLS, Animosys, and Animo Connect, ensuring they are user-friendly and effective. The initiative will also provide training and support resources, fostering a streamlined online experience that enhances academic and professional succes for all users."
     },
     {
       title: "Veritas La Salle: An Information Dissemination Initiative",
