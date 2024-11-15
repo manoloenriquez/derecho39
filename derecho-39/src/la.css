@@ -46,7 +46,7 @@
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 30px;
   justify-items: center; /* Center each card horizontally */
-  align-items: center; /* Center each card vertically */
+  align-items: start; /* Align each card to the top */
 }
 
 /* Styling for each legislator card */
@@ -59,6 +59,7 @@
   overflow: hidden;
   width: 100%;
   max-height: 60vh;
+  max-width: 250px; /* Set max-width for consistency */
 }
 
 /* Image styling to ensure it is centered */
@@ -66,7 +67,7 @@
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain; /* Ensure the full image is shown without cropping */
 }
 
 /* Center text in info box */
@@ -139,6 +140,7 @@
 
   .legislator-card {
     width: 100%; /* Full width for each card */
+    max-width: none; /* Remove max width on mobile */
   }
 
   .title {
@@ -148,7 +150,8 @@
   /* Ensure image takes full width and adjusts properly for mobile */
   .legislator-photo img {
     width: 100%;
-    max-height: 250px; /* Set a reasonable max height on mobile */
-    object-fit: cover;
+    height: auto; /* Automatically adjust height to avoid cropping */
+    max-height: none; /* Allow full image height */
+    object-fit: contain; /* Ensure the full image is visible without cropping */
   }
 }
