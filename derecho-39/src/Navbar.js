@@ -7,9 +7,9 @@ const Navbar = () => {
         <img src="/SantuLogo.png" alt="Santu Logo" className="santulogo" />
       </Link>
       <div className="links">
-        <Link to="/home">Home</Link>
+        <Link to="/home">Colleges</Link>
         <Link to="/eb">Executive Board</Link>
-        <Link to="/colleges">Colleges</Link>
+        {/* <Link to="/colleges">Colleges</Link> */}
         <div className="la-item">
           <Link to="/la">LA Agenda</Link>
           <div className="la-dropdown service-dropdown">
