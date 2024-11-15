@@ -9,6 +9,7 @@
 .main-container {
   display: flex;
   flex: 1;
+  justify-content: center; /* Center the grid horizontally */
   padding-bottom: 60px;
 }
 
@@ -27,110 +28,119 @@
 }
 
 .la-container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    color: #010085;
-    margin-bottom: 20px;
-    font-weight: bolder;
-  }
-  
-  .la-container {
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .legislators-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 30px;
-  }
-  
-  .legislator-card {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .legislator-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .legislator-info-box {
-    position: below;
-    bottom: 0;
-    width: 100%;
-    background-color: #03045e; /* Dark blue background */
-    color: white;
-    text-align: left;
+  padding: 20px;
+  text-align: center;
+  width: 70%;
+}
+
+.title {
+  font-size: 2rem;
+  color: #010085;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+/* Grid layout for legislators */
+.legislators-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center; /* Center each card horizontally */
+  align-items: center; /* Center each card vertically */
+}
+
+/* Styling for each legislator card */
+.legislator-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Image styling to ensure it is centered */
+.legislator-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Center text in info box */
+.legislator-info-box {
+  width: 100%;
+  background-color: #03045e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.legislator-info-box h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.legislator-info-box h2 span {
+  color: #ffdd00; /* Gold color for last name */
+}
+
+.legislator-info-box .role,
+.legislator-info-box .course,
+.legislator-info-box .school {
+  font-size: 0.8rem;
+  color: white;
+  margin: 2px 0;
+}
+
+.role {
+  font-weight: bold;
+}
+
+.school {
+  font-weight: normal;
+}
+
+/* Title styling */
+.left-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Credits styling */
+.credits {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .main-container {
     padding: 10px;
   }
-  
-  .legislator-info-box h2 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: white;
-    margin: 0;
-  }
-  
-  .legislator-info-box h2 span {
-    color: #ffdd00; /* Gold color for last name */
-  }
-  
-  .legislator-info-box .role,
-  .legislator-info-box .course,
-  .legislator-info-box .school {
-    font-size: 0.8rem;
-    color: white;
-    margin: 2px 0;
-  }
-  
-  .role {
-    font-weight: bold;
-  }
-  
-  .school {
-    font-weight: normal;
+
+  .la-container {
+    width: 100%;
   }
 
-  .main-container {
-    display: flex;
-}
+  .legislators-grid {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 20px; /* Reduced gap between items */
+  }
 
-.left-section {
-    width: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+  .legislator-card {
+    width: 100%; /* Full width for each card */
+  }
 
-.left-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1a1a1a;
-    text-align: center;
-    line-height: 1.2;
-}
-
-.credits {
-    font-size: 0.9rem;
-    color: #1a1a1a;
-    margin-top: auto;
-    text-align: center;
-}
-
-.la-container {
-    width: 70%;
-    padding: 20px;
+  .title {
+    font-size: 1.5rem; /* Slightly smaller title on mobile */
+  }
 }

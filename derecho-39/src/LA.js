@@ -17,9 +17,6 @@ export default function LA() {
   return (
     <div className="la-page">
       <div className="main-container">
-        <div className="left-section">
-          <img src="/sidebar-image.png" alt="Sidebar" />
-        </div>
         <div className="la-container">
           <h1 className="title">YOUR BATCH LEGISLATORS</h1>
           <div className="legislators-grid">
