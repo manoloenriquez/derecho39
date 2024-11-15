@@ -94,6 +94,7 @@ html, body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  max-height: 40vh;
 }
 
 .thrust-heading {
@@ -117,3 +118,81 @@ html, body {
   font-size: 1em;
   color: #666;
 }
+
+/* Highlighted SPOA Title */
+.spoa-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #03045e;
+  margin: 30px 0 10px;
+}
+
+.spoa-title span {
+  background-color: #FBC02D; /* Background highlight */
+  padding: 2px;
+  border-radius: 5px;
+}
+
+/* Thrusts Section */
+.spoas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.spoa {
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-height: 45vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.spoa-heading {
+  font-size: 1.2em;
+  color: #03045e;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.spoa-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 270px; /* Adjust width as needed */
+  height: 2px;
+  background-color: #2D4F91; /* Color of the line below headings */
+}
+
+.spoa p {
+  font-size: 1em;
+  color: #666;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  padding: 8px 16px;
+  background-color: #007eff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
