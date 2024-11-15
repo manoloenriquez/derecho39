@@ -180,6 +180,7 @@ html, body {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .navigation-buttons button {
@@ -196,11 +197,4 @@ html, body {
   cursor: not-allowed;
 }
 
-@media (max-width: 768px) {
-  .navigation-button {
-      top: 10px; /* New position on mobile */
-      right: 10px;
-      /* Other adjustments specific to mobile view */
-  }
-}
 
