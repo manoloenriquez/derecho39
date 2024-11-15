@@ -44,9 +44,9 @@ export default function Agenda() {
   return (
     <div className="agenda-page">
       <div className="main-container">
-        <div className="left-section">
+        {/* <div className="left-section">
           <img src="/sidebar-image.png" alt="Sidebar" />
-        </div>
+        </div> */}
         <div className="agenda-container">
           <h1 className="title">What is the Legislative Assembly?</h1>
           <div className="committees-grid">

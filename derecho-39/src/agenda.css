@@ -26,8 +26,10 @@
 }
 
 .agenda-container {
-    width: 70%;
+    max-width: 70%;
     padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .title {
