@@ -5,6 +5,9 @@ import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+document.title = "Derecho Santugon";
+
 root.render(
   <React.StrictMode>
     <App />
