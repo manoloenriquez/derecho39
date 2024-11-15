@@ -191,8 +191,8 @@ const Eb = () => {
 
       {/* Navigation Buttons */}
       <div className="navigation-buttons">
-        <button onClick={prevGroup} disabled={currentGroup === 0}>Previous</button>
-        <button onClick={nextGroup} disabled={currentGroup === totalGroups - 1}>Next</button>
+        <button onClick={prevGroup} disabled={currentGroup === 0}>←</button>
+        <button onClick={nextGroup} disabled={currentGroup === totalGroups - 1}>→</button>
       </div>
 
         
