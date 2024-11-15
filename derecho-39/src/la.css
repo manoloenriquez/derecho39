@@ -144,4 +144,11 @@
   .title {
     font-size: 1.5rem; /* Slightly smaller title on mobile */
   }
+
+  /* Ensure image takes full width and adjusts properly for mobile */
+  .legislator-photo img {
+    width: 100%;
+    max-height: 250px; /* Set a reasonable max height on mobile */
+    object-fit: cover;
+  }
 }
