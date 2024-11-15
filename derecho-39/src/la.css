@@ -141,6 +141,7 @@
   .legislator-card {
     width: 100%; /* Full width for each card */
     max-width: none; /* Remove max width on mobile */
+    max-height: none;
   }
 
   .title {
